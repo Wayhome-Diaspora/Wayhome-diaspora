@@ -1,0 +1,40 @@
+name: waya
+description: Waya — diaspora remittance app powered by BMONI Embedded
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+  flutter: ">=3.3.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # BMONI Embedded packages
+  bmoni_embedded_sdk: ^0.0.2
+  bkey_uikit: ^0.0.1
+  bmoni_embedded_wallets_cards: ^0.0.1
+
+  # State management (required by bmoni_embedded_wallets_cards)
+  flutter_riverpod: ^2.6.1
+
+  # HTTP client for backend calls
+  http: ^1.2.0
+
+  # Local storage for persisting bmoniUserId
+  shared_preferences: ^2.3.0
+
+  # Routing
+  go_router: ^14.8.0
+
+  # UI utilities
+  intl: ^0.20.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
